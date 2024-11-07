@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  LineGraphView.swift
 //  ChartsExamples
 //
 //  Created by Yuzhou Zhang on 2024-11-04.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct SwiftUIView: View {
+struct SingleLineGraphView: View {
     let chartData = [ (city: "Hong Kong", data: hkWeatherData),
                       (city: "London", data: londonWeatherData),
                       (city: "Taipei", data: taipeiWeatherData) ]
@@ -41,5 +41,5 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView()
+    SingleLineGraphView()
 }
