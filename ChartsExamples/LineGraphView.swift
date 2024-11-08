@@ -52,8 +52,10 @@ struct MultiLineGraphView: View {
                             x: .value("Month", item.date),
                             y: .value("Temp", item.temperature)
                         )
+                        .interpolationMethod(.stepStart)
                     }
                     .foregroundStyle(by: .value("City", series.city))
+                    .symbol(by: .value("City", series.city))
                 }
             }
             .chartXAxis {
